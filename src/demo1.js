@@ -11,9 +11,12 @@ function component() {
 
     // 一、创建场景、相机和渲染器
     scene = new THREE.Scene();
+    //第二个值是长宽比（aspect ratio）我们已知都是500，比值为1
     camera=new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
     renderer=new THREE.WebGLRenderer();
-    renderer.setSize(500,500);
+    renderer.setSize(500,500);//设置一个渲染器的大小尺寸,也就是设置视口大小
+    //如果不想全div显示，可以传递娇小的只；
+    //如果想全div以较低分辨率显示，可以传递第三个参数为false
 
     //二、将渲染的dom添加到div中
     div.appendChild(renderer.domElement);
