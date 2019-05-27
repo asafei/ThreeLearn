@@ -1,0 +1,29 @@
+{
+  "name": "LearnThree",
+  "version": "1.0.0",
+  "description": "学习three，源码注释和使用方式",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asafei/ThreeLearn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asafei/ThreeLearn/issues"
+  },
+  "homepage": "https://github.com/asafei/ThreeLearn#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
